@@ -1,0 +1,890 @@
+/* General Section Styling */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px; /* Adjust for smaller screens */
+    padding-left: 30px;
+}
+
+.content {
+    padding-top: 50px; /* Match this to your header height */
+}
+ 
+
+/* Global Styles */
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: white;
+}
+
+
+p {
+    font-family: 'Jost', sans-serif;
+    animation-delay: 0.5s;
+    font-size: 1rem; 
+    margin-bottom: 10px;
+}
+
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-up Animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Style the "Hire Me" button */
+.menu-item:last-child a {
+    background-color: #050A30; /* Button background color */
+    color: #ffffff; /* Text color */
+    padding: 7px 9px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 1rem; /* Adjust font size */
+}
+
+/* Hover effect */
+.menu-item:last-child a:hover {
+    background-color: #0091DB; /* Change background on hover */
+    transform: scale(1.05); /* Slightly increase size */
+}
+
+#typed-text {
+    display: inline-block;
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Ensures smooth typing effect */
+    min-height: 1.5em;
+}
+
+.highlight {
+    background-color: #050A30;
+    color: white;
+    padding: 5px 8px;
+}
+
+/* 
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .p-footer {
+        font-size: 0.8rem;
+    }
+
+    .img-home {
+        max-width: 300px; 
+        align-self: center;
+    }
+
+    .menu-item:last-child a {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .img-home {
+        max-width: 500px;
+    }
+
+    .menu-item:last-child a {
+        font-size: 1rem;
+        padding: 7px 9px;
+    }
+}
+
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .img-home {
+        max-width: 600px; 
+    }
+
+    .menu-item:last-child a {
+        font-size: 1rem;
+    }
+} */
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.col-md-auto {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.col-lg-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: flex-start; /* Aligns text to the left */
+    height: 100%; /* Ensures full height */
+    padding-top: 45px; /* Moves content lower */
+}
+
+.col-lg-6{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: flex-start; /* Align text to the left */
+    height: 100%; /* Ensure it fills the parent container */
+    
+    
+}
+
+
+/*HOME*/
+.img-home {
+    width: 100%; /* Make image responsive */
+    max-width: 600px; /* Maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the circular area */
+    display: block; /* Remove potential inline spacing */
+    margin: 0 auto; /* Center the image */
+}
+
+h1.hf {
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: #050A30;
+    text-align: center; /* Center-align for smaller devices */
+    margin: 1px 0px; /* Add some spacing */
+    font-family: 'Manrope', sans-serif;
+    animation-delay: 0.2s;
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards, slideUp 1s ease-out forwards;
+}
+
+p.hf {
+    font-size: 2rem;
+    color: #050A30;
+    text-align: center; /* Center-align for smaller devices */
+    margin: 1px 0; /* Add spacing for better readability */
+    font-family: 'Jost', sans-serif;
+    animation-delay: 0.5s;
+    font-size: 1rem; 
+    margin-bottom: 15px;
+}
+
+/* Gina Basquiña */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+/* ABOUT */
+h1.af {
+    text-align: left;
+    font-weight: bold;
+    color: #050A30;
+    font-family: 'Manrope', sans-serif;
+    animation-delay: 0.2s;
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards, slideUp 1s ease-out forwards;
+    font-size: 4rem; 
+}
+
+.p-about {
+    text-align: justify;
+    font-size: 21px;
+    font-family: 'Jost', sans-serif;
+    animation-delay: 0.5s;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 480px; /* Limits maximum size */
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center; /* Center buttons on smaller devices */
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Wrap stats cards for smaller screens */
+    margin-top: 40px;
+}
+
+.stats-card {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.dc {
+    text-decoration: none;
+    background-color: #050A30; /* Dark Blue */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 18px; /* Padding for size */
+    font-size: 16px; /* Readable text size */
+    cursor: pointer; /* Pointer cursor for interaction */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth effect */
+}
+
+.dc:hover {
+    background-color: #fff; /* Lighter blue on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    color: #050A30;
+    border: 3px solid #050A30; /* Dark border for definition */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+.vp {
+    color: #050A30; /* Dark text for contrast */
+    border: 3px solid #050A30; /* Dark border for definition */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 18px; /* Padding for size */
+    font-size: 16px; /* Readable text size */
+    cursor: pointer; /* Pointer cursor for interaction */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth effect */
+    text-decoration: none;
+}
+
+.vp:hover {
+    background-color: #050A30; /* Dark blue on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* RESPONSIVENESS */
+
+/* Small Devices (Phones) */
+@media (max-width: 576px) {
+    h1.hf {
+        font-size: 3rem; /* Smaller font size for phones */
+        margin-top: 35px; /* Adjust spacing */
+    }
+    h1.af {
+        font-size: 2rem; /* Smaller font size for phones */
+        margin: 10px 0; /* Adjust spacing */
+    }
+
+    p.hf {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+        margin: 1px 0; /* Adjust spacing */
+    }
+    
+    .p-about {
+        font-size: 16px; /* Reduce font size for smaller screens */
+        margin: 1px 0; /* Adjust spacing */
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .stats-card {
+        width: 100%; /* Make stats cards stack */
+        max-width: 300px; /* Limit size */
+    }
+
+    .btn-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px; /* Increase space between buttons */
+    }
+
+    .dc{
+        border-radius: 8px; /* Rounded corners */
+        padding: 8px 16px; /* Padding for size */
+        font-size: 13px; /* Readable text size */
+    }
+    .vp{
+        border-radius: 8px; /* Rounded corners */
+        padding: 8px 16px; /* Padding for size */
+        font-size: 13px; /* Readable text size */
+    }
+    .img-home {
+        width: 100%; /* Make image responsive */
+        max-width: 600px; /* Maximum width for larger screens */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure the image covers the circular area */
+        display: block; /* Remove potential inline spacing */
+        margin: 25px; /* Remove margins */
+        margin-left: 8px;
+    }
+    .profile-pic {
+        height: auto;
+        max-width: 350px; /* Limits maximum size */
+        margin-top: -3rem; /* Reduce top margin */
+        margin-bottom: -3rem; /* Reduce bottom margin */
+        transition: transform 0.3s ease;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    h1.hf {
+        font-size: 4rem; /* Slightly smaller font for tablets */
+    }
+
+    p.hf {
+        font-size: 1.4rem; /* Reduce font size for smaller screens */
+        margin: 1px 0; /* Adjust spacing */
+    }
+
+    .stats-card {
+        width: 250px; /* Adjust size for tablets */
+    }
+}
+
+/* Large Devices (Laptops and Desktops) */
+@media (min-width: 769px) {
+    h1.hf {
+        font-size: 5.5rem; /* Original size */
+    }
+
+    p.hf {
+        font-size: 2rem; /* Original size */
+    }
+
+    .stats-container {
+        gap: 30px; /* Add more spacing between cards */
+    }
+}
+
+
+/*PORTFOLIO*/
+.card {
+    background-color: #f8f9fa; /* Light gray for a subtle background */
+    color: #212529; /* Dark text for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Add some padding inside the card */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Optional: Hover Effect */
+.card:hover {
+    background-color: #ffffff; /* Slightly brighter on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.tech-logo {
+    width: 100px;     /* Uniform width */
+    height: 100px;    /* Uniform height */
+    object-fit: contain; /* Ensures images maintain their aspect ratio */
+    padding: 10px; /* Adds space between the image and the card border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s, transform 0.3s; /* Smooth effects on hover */
+}
+
+.card-img-top {
+    height: 200px;     /* Set uniform height for all images */
+    object-fit: cover; /* Ensures images maintain aspect ratio without distortion */
+    width: 100%;       /* Ensures full-width scaling */
+}
+
+.container,
+#projectsContainer,
+#techStackContainer,
+#certificatesContainer {
+    max-width: 90%;     /* Ensures full-width layout */
+    margin: 0 auto;      /* Centers content */
+    padding: 1px 1px;  /* Balanced spacing on all sides */
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
+
+#projects,
+#certificates,
+#tech-stack {
+    background-color: transparent;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit text to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds "..." for truncated text */
+    text-align: justify; /* Justify the paragraph for clean alignment */
+}
+
+a.text-primary {
+    color: #050A30 !important; /* Forces your custom color */
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+a.text-primary:hover {
+    color: #0091DB !important; /* Softer hover effect */
+}
+
+.live-btn{
+    text-decoration: none;
+    color: white; /* Forces your custom color */
+    font-weight: 500;
+    background-color: #050A30;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.live-btn:hover{
+    color: white;
+    transform: scale(1.05);
+    font-weight: 500px;
+}
+
+.tab-buttons {
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: center;
+    gap: 80px; /* Adds space between the buttons */
+}
+
+.tab-btn {
+    flex: 1; /* Distribute buttons evenly within the container */
+    max-width: none; /* Remove width limits */
+    padding: 15px 0; /* Balanced padding for height */
+    background: linear-gradient(135deg, #1A2A42, #0F1B30);
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+}
+
+/* Hover and Active States */
+.tab-btn.active,
+.tab-btn:hover {
+    background-color: #0056b3;
+    color: white;
+    box-shadow: 0 4px 15px rgba(109, 231, 231, 0.8);
+    border: 1px solid white;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .tab-buttons {
+        display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        justify-content: center;
+        gap: 20px; /* Adds space between the buttons */
+    }
+
+    .tab-btn {
+        flex: 0 1 auto; /* Ensure buttons scale as needed */
+        max-width: 180px; /* Limit width for small screens */
+        padding: 10px; /* Reduce padding */
+        font-size: 14px;
+    }
+
+    .icon {
+        font-size: 1rem; /* Adjust icon size */
+    }
+}
+
+@media (max-width: 576px) {
+    .tab-btn {
+        max-width: 150px; /* Further reduce button width */
+        padding: 8px;
+        font-size: 12px;
+        gap: 5px; /* Reduce icon-text gap */
+    }
+
+    .icon {
+        font-size: 0.9rem;
+    }
+}
+
+
+.certificate-container {
+    display: flex;
+    flex-direction: column; /* For stacking vertically */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Center the container */
+    padding: 10px; /* Optional: Add padding */
+}
+
+.certificate-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Adjust to fit your needs */
+    margin: 10px auto; /* Center the card and add spacing */
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s, transform 0.3s; /* Smooth effects on hover */
+}
+
+.certificate-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.certificate-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.certificate-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.see-more-btn {
+    background: none;
+    font-weight: bold;
+    color: #0091DB;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    gap: 3px;
+    transition: transform 0.2s ease;
+}
+
+.see-more-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .certificate-container {
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+
+    .certificate-card {
+        max-width: 90%; /* Use a percentage for better responsiveness */
+    }
+}
+
+/* Modal Styling */
+.certificatesmodal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center; /* Centers the modal */
+}
+
+/* Modal Content */
+.certificatesmodal-content {
+    display: block;
+    max-width: 90%; /* Adjust width for smaller screens */
+    max-height: 80%; /* Limit height to fit smaller screens */
+    margin: auto;
+    border-radius: 8px;
+    object-fit: contain; /* Ensures image scales properly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional styling */
+    position: relative; /* Parent container for positioning close button */
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: -10px; /* Position the button slightly above the top border of the image */
+    right: -10px; /* Position the button slightly outside the right border */
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    padding: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the X inside the button */
+    z-index: 1001; /* Ensure it appears above the modal content */
+    transition: background-color 0.3s ease; /* Adds hover effect */
+}
+
+/* Close Button Hover */
+.close:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .certificatesmodal-content {
+        max-width: 80%; /* Shrink image further on smaller devices */
+        max-height: 70%;
+    }
+}
+
+
+/* Fix Close Button Styling */
+.close {
+    position: fixed; /* Fix close button so it stays visible */
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above the modal content */
+}
+
+/* Modal for projects */
+.modal-header {
+    background-color: #050A30;
+    color: #fff;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-body img {
+    max-width: 100%; 
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.modal-body .row {
+    width: 100%;
+}
+
+.modal-body h5{
+    padding-bottom: 5px;
+    color: #050A30;
+} 
+.modal-body p, 
+.modal-body ul, 
+.modal-body .btn {
+    text-align: justify;
+}
+
+
+/* CONTACT */
+#contact {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content horizontally */
+    background-color: #fff;
+    box-sizing: border-box; /* Includes padding in width/height calculations */
+}
+
+/* HEADINGS */
+h1.cf {
+    font-size: 85px; /* Default size for larger screens */
+    font-weight: bold;
+    text-align: left;
+    color: #050A30;
+}
+
+h5.cf {
+    font-size: 1rem; /* Default font size */
+    text-align: left;
+    text-transform: uppercase;
+    color: #333;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+h3.cf {
+    font-size: 1.5rem; /* Default size for larger screens */
+    text-align: left;
+    color: #050A30;
+    margin-bottom: 30px; /* Reduced margin for compactness */
+}
+
+/* LINKS */
+a.cf {
+    color: #050A30;
+    text-decoration: none;
+}
+
+.email {
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: left;
+    color: #050A30;
+    word-break: break-word; /* Prevents long emails from breaking layout */
+}
+
+/* RESPONSIVENESS */
+
+/* Medium-sized screens (tablets) */
+@media (max-width: 768px) {
+    h1.cf {
+        font-size: 55px; /* Reduced font size for tablets */
+        text-align: left; /* Center-align on smaller screens */
+    }
+
+    h5.cf {
+        font-size: 0.9rem; /* Slightly smaller size for readability */
+        text-align: left; /* Center-align text */
+    }
+
+    h3.cf {
+        font-size: 1.3rem; /* Adjusted size for better fit */
+        text-align: left; /* Center-align text */
+        margin-bottom: 30px; /* Adjust spacing */
+    }
+
+    .email {
+        font-size: 1.3rem; /* Reduced size for tablets */
+    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 480px) {
+    h1.cf {
+        font-size: 40px; /* Further reduced font size for mobile */
+        text-align: left; /* Center-align for mobile screens */
+    }
+
+    h5.cf {
+        font-size: 0.8rem; /* Smaller size for better readability */
+        text-align: left; /* Center-align text */
+    }
+
+    h3.cf {
+        font-size: 1rem; /* Smaller font size for mobile */
+        text-align: left; /* Center-align text */
+        margin-bottom: 15px; /* Reduce spacing */
+    }
+
+    a.cf {
+        font-size: 1.2rem; /* Adjusted size for links */
+    }
+
+    .email {
+        font-size: 1.2rem; /* Adjust size for smaller screens */
+        text-align: left; /* Center-align for mobile */
+    }
+}
+
+
+/* SOCIAL ICONS */
+.social-links {
+    display: flex;
+    flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
+    align-items: center;
+    justify-content: flex-start; /* Aligns icons to the left by default */
+    gap: 20px; /* Adjusted spacing between icons */
+    margin: 10px 0; /* Consistent margin */
+}
+
+.social-links img {
+    width: 30px; /* Default size */
+    height: 30px;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-links img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+

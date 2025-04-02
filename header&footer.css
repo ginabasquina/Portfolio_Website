@@ -1,0 +1,126 @@
+/* General Header Styling */
+.header {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header.scrolled-up {
+    position: fixed; /* Becomes fixed when scrolling up */
+    top: 0;
+}
+
+.header.hidden {
+    top: -100px; /* Hide header by moving it out of view */
+}
+
+.logo-image {
+    max-height: 55px;
+    padding: 5px 5px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-custom {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-item {
+    margin: 0 15px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-item a:hover {
+    color: #007bff;
+}
+
+/* Menu Toggle Button for Mobile */
+.menu-toggle {
+    display: block; /* Ensures visibility */
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Use absolute positioning */
+    right: 1px; /* Adjust this value to align it further to the right */
+    top: 50%; /* Center vertically within the header */
+    transform: translateY(-50%); /* Correct vertical alignment */
+    z-index: 1100; /* Ensure it stays above other elements */
+}
+
+
+.menu-toggle svg rect {
+    fill: #050A30;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        padding: 15px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .menu-custom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Footer Styling */
+footer {
+    background: #050A30; /* Dark blue background */
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    font-family: 'Jost', sans-serif;
+    animation-delay: 0.5s;
+    font-weight: lighter;
+    font-size: 0.9rem; 
+    margin-top: 20px;
+}
+
+/* Footer Copyright Text */
+.site-info p {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+

@@ -1,0 +1,33 @@
+[
+    {
+      "title": "School Website",
+      "description": "The ESFS School Website is a dynamic platform showcasing the school's programs,events, and achievements, created using WordPress. It offers a user-friendly interface, responsive design, and integrates various plugins for enhanced functionality.",
+      "image": "images/esfs_Website.png"
+    },
+    {
+      "title": "Learning Resource System",
+      "description": "A Learning Resource System (LRS) is a web-based platform designed to facilitate learning interaction between educators and learners. It offers a centralized hub for uploading, organizing, and accessing learning materials, making it easy for students to access the materials.",
+      "image": "images/lrs1.png"
+    },
+    {
+      "title": "Monkey Hop Game",
+      "description": "Monkey Hop is a simple fun game created using Unity, where players control a jumping monkey navigating through obstacles and collecting bananas until it reaches the final goal.", 
+      "image": "images/gameDev1a.png"
+    },
+    {
+      "title": "Space Shooter Game",
+      "description": "Space Shooter is simple game where players will battle against alien spaceships. Players must defeat waves of enemy ships to survive. Every minute brings a challenge as boss ship emerges, testing the player's skills and tactics to the limit.", 
+      "image": "images/gameDev2a.png"
+    },
+    {
+      "title": "Task Tracker Web-App",
+      "description": "Task Tracker is a simple web-based application designed for task organization and tracking. Users can create an account, providing them with access to a personalized workspace. Within this workspace, users can add new tasks, specifying details such as task name, description, due date, and priority level.", 
+      "image": "images/to-dolist1.png"
+    },
+    {
+      "title": "Password Verifier",
+      "description": "Password verifier is a mini web-based system that assesses the strength of passwords entered by users to determine if they meet security standards. The system provides immediate feedback to users, indicating whether their password is considered strong or not.", 
+      "image": "images/pv1.png"
+    }
+  ]
+  

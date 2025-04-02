@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gina Basquiña | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="header&footer.css">
+    <link rel="stylesheet" href="content.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="masthead" class="header navbar navbar-expand-lg">
+        <div class="container-xxl d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a href="#home" class="navbar-brand d-flex align-items-center">
+                <img src="images/Logo.png" class="logo-image" alt="Logo">
+            </a>
+    
+            <!-- Menu Toggle Button -->
+            <button class="menu-toggle navbar-toggler" type="button" aria-label="Toggle Navigation">
+                <svg viewBox="0 0 100 80" width="30" height="30">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                </svg>
+            </button>
+    
+            <!-- Navigation -->
+            <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+                <div class="nav-menu">
+                    <div class="menu-wrap">
+                        <ul id="menu-header-menu" class="menu-custom">
+                            <li class="menu-item"><a href="#home">Home</a></li>
+                            <li class="menu-item"><a href="#about">About</a></li>
+                            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                            <li class="menu-item"><a href="#contact">Contact</a></li>
+                            <li class="menu-item">
+                                <a href="mailto:ginabasquina23@gmail.com" target="_blank">Hire Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    
+
+    <!-- MAIN CONTENT -->
+    <main id="main" class="content">
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section">
+        <div class="container-xxl">
+            <div class="row align-items-center">
+                <!-- Left Column: Text and Social Links -->
+                <div class="col-lg-6 d-flex flex-column align-items-start text-start">
+                    <h1 class="hf" id="typed-text">
+                        <span id="first-word" class="fade-in"></span> 
+                        <span id="second-word" class="highlight"></span>
+                    </h1>
+                    <p class="hf">Turning Ideas into Digital Solutions</p>
+    
+                    <!-- Social Links -->
+                    <div class="d-flex gap-4 mt-3">
+                        <a href="#portfolio" class="dc">
+                            <i class="fas fa-code"></i>&nbsp;&nbsp;Projects
+                        </a>                        
+                        <a class="vp" href="#contact">
+                            <i class="fas fa-envelope"></i>&nbsp;&nbsp;Contact
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Right Column: Image -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="images/pic.jpg" alt="Profile Picture" class="img-home">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- ABOUT SECTION -->
+    <section  id="about" class="section">
+        <div class="container-xxl">
+            <div class="row align-items-center">
+                <h1>About Me</h1>
+                <p>Turning Ideas into Digital Solutions</p>  
+                <div class="about-section d-flex flex-wrap align-items-center">
+                    <div class="col-12 col-md-6 order-2 order-md-1">
+                        <h1 class="af">Gina Basquiña</h1>
+                        <p class="p-about">
+                            A recent Information Technology graduate with a passion for web development, web design, and data analytics.
+                            Always curious to explore new ideas and expand my skills. Beyond coding, I’m committed to continuous learning
+                            and staying updated with industry trends — bringing fresh ideas and creative solutions to digital design and development.
+                        </p>
+                        <div class="d-flex gap-4 mt-3">
+                            <a href="https://drive.google.com/file/d/1YvylMCQkKuaGe-yvNJ4gWs8xowcRRJ_X/view?usp=sharing" class="dc">
+                                <i class="fas fa-download"></i>&nbsp;&nbsp;Download CV
+                            </a>                        
+                            <a class="vp" href="#portfolio">
+                                <i class="fas fa-folder-open"></i>&nbsp;&nbsp;View Projects
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center order-1 order-md-2">
+                        <img src="images/icon.png" alt="Profile Picture" class="profile-pic">
+                    </div>
+                </div>
+                                        
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSONAL PROJECTS -->
+    <section id="portfolio" class="section">
+        <h1>Portfolio Showcase</h1>
+        <p>Discover my journey of growth through projects, certifications, and technical skills. 
+            Each section reflects a key milestone in my ongoing learning adventure.</p>  
+        
+        <!-- Tab Buttons -->
+        <div class="container-xxl tab-container">
+            <div class="tab-buttons d-flex justify-content-center flex-wrap">
+                <button class="tab-btn active" onclick="showTab('projects',event)">
+                    <span class="icon">⚙️</span> Projects
+                </button>
+                <button class="tab-btn" onclick="showTab('certificates',event)">
+                    <span class="icon">🏅</span> Certificates
+                </button>
+                <button class="tab-btn" onclick="showTab('tech-stack',event)">
+                    <span class="icon">🔗</span> Tech Stack
+                </button>
+            </div>
+        </div>
+        
+        
+        <!-- Tab Contents -->
+        <div id="projects" class="tab-content">
+            <div class="row" id="projectsContainer">
+                <!--Visible Projects-->
+                <div class="col-md-4 mb-4 project-item">
+                    <div class="card shadow-lg">
+                        <img src="images/esfs_Website.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">School Website</h5>
+                            <p class="card-text">The ESFS School Website is a dynamic platform showcasing the school's programs, 
+                                events, and achievements, created using WordPress. It offers a user-friendly interface, responsive
+                                design, and integrates various plugins for enhanced functionality.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a  class="text-primary project-btn" data-id="0">Details
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+
+                <div class="col-md-4 mb-4 project-item">
+                    <div class="card shadow-lg">
+                        <img src="images/lrs.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Learning Resource System</h5>
+                            <p class="card-text">A Learning Resource System (LRS) is a web-based platform designed to facilitate learning 
+                                interaction between educators and learners. It offers a centralized hub for uploading, organizing, and accessing 
+                                learning materials, making it easy for students to access the materials.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a  class="text-primary project-btn" data-id="1">Details
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 project-item">
+                    <div class="card shadow-lg">
+                        <img src="images/gameDev1.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Monkey Hop Game</h5>
+                            <p class="card-text">Monkey Hop is a simple fun game created using Unity, where players control a jumping monkey 
+                                navigating through obstacles and collecting bananas until it reaches the final goal.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a  class="text-primary project-btn" data-id="2">Details
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 project-item">
+                    <div class="card shadow-lg">
+                        <img src="images/gameDev2.png" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Space Shooter Game</h5>
+                            <p class="card-text">Space Shooter is simple game where players will battle against alien spaceships. Players must
+                                defeat waves of enemy ships to survive. Every minute brings a challenge as boss ship emerges, testing the player's
+                                skills and tactics to the limit.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a  class="text-primary project-btn" data-id="3">Details
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 project-item">
+                    <div class="card shadow-lg">
+                        <img src="images/to-dolist.png" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Tracker Web-App</h5>
+                            <p class="card-text">Task Tracker is a simple web-based application designed for task organization and tracking. Users 
+                                can create an account, providing them with access to a personalized workspace. Within this workspace, users can add
+                                new tasks, specifying details such as task name, description, due date, and priority level.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a  class="text-primary project-btn" data-id="4">Details
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 project-item">
+                    <div class="card shadow-lg">
+                        <img src="images/pv.png" class="card-img-top" alt="Project 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Password Verifier</h5>
+                            <p class="card-text">Password verifier is a mini web-based system that assesses the strength of passwords entered by users 
+                                to determine if they meet security standards. The system provides immediate feedback to users, indicating whether their 
+                                password is considered strong or not.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a  class="text-primary project-btn" data-id="5">Details
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <!--Hidden projects-->
+                
+                <div class="col-md-4 mb-4 project-item hidden">
+                    <div class="card shadow-lg">
+                        <img src="images/to-dolist.png" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Tracker Web-App</h5>
+                            <p class="card-text">...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a  class="text-primary project-btn" data-id="6">Details
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 project-item hidden">
+                    <div class="card shadow-lg">
+                        <img src="images/to-dolist.png" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Tracker Web-App</h5>
+                            <p class="card-text">...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a  class="text-primary project-btn" data-id="7">Details
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 project-item hidden">
+                    <div class="card shadow-lg">
+                        <img src="images/to-dolist.png" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Tracker Web-App</h5>
+                            <p class="card-text">...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a  class="text-primary project-btn" data-id="8">Details
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+           
+
+                <!-- Modal -->
+                <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <!-- Image Section -->
+                            <img id="projectImage" src="path-to-large-image.png" alt="Project Preview" class="img-fluid rounded">
+                            <h5 class="modal-title fw-bold mb-0" id="projectModalLabel"></h5>
+
+                            <!-- Text Section: Title & Project Description -->
+                            <p id="projectDescription"></p>
+
+                            <!-- Buttons -->
+                            <a href="#" class="live-btn" target="_blank">Live Demo
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- See More Button -->
+        <button id="seeMoreBtnProjects" class="see-more-btn" onclick="toggleProjects()">
+            <span id="seeMoreTextProjects">See More</span>
+        </button>
+    </div>
+
+            <!--Certificates-->
+            <div id="certificates" class="tab-content" style="display: none;">
+                <div class="row" id="certificatesContainer">
+
+                    <!--visible item-->
+                    <div class="col-md-3 mb-4 certificate-item">
+                        <div class="certificate-card" onclick="openModal('certificates/FigmaP1_cert.png')">
+                            <img src="certificates/FigmaP1_cert.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-3 mb-4 certificate-item">
+                        <div class="certificate-card" onclick="openModal('certificates/FigmaP2_cert.png')">
+                            <img src="certificates/FigmaP2_cert.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item">
+                        <div class="certificate-card" onclick="openModal('certificates/DAE_Badge20240728-7-za3vuy.png')">
+                            <img src="certificates/DAE_Badge20240728-7-za3vuy.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item">
+                        <div class="certificate-card" onclick="openModal('certificates/ITDS_Badge20240213-29-zff23n.png')">
+                            <img src="certificates/ITDS_Badge20240213-29-zff23n.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item">
+                        <div class="certificate-card" onclick="openModal('certificates/CTM_Badge20240726-8-fi7smc.png')">
+                            <img src="certificates/CTM_Badge20240726-8-fi7smc.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item">
+                        <div class="certificate-card" onclick="openModal('certificates/ITC_Badge20240208-29-e3gy09.png')">
+                            <img src="certificates/ITC_Badge20240208-29-e3gy09.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item">
+                        <div class="certificate-card" onclick="openModal('certificates/EH_Badge20241229-26-3gj1b0.png')">
+                            <img src="certificates/EH_Badge20241229-26-3gj1b0.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div>                     
+                    <div class="col-md-3 mb-4 certificate-item">
+                        <div class="certificate-card" onclick="openModal('certificates/ITIOT_Badge20240222-29-4f0ly7.png')">
+                            <img src="certificates/ITIOT_Badge20240222-29-4f0ly7.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <!--Hidden item-->
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/JSE1_Badge20240515-8-81hil5.png')">
+                            <img src="certificates/JSE1_Badge20240515-8-81hil5.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/JSE2_Badge20241013-7-8d39yt.png')">
+                            <img src="certificates/JSE2_Badge20241013-7-8d39yt.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/PSE1_Badge20240305-37-tg28z0.png')">
+                            <img src="certificates/PSE1_Badge20240305-37-tg28z0.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/PSE2_Badge20241226-26-zb2ws0.png')">
+                            <img src="certificates/PSE2_Badge20241226-26-zb2ws0.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/DIPR1_cert.png')">
+                            <img src="certificates/DIPR1_cert.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/DIPR2_cert.png')">
+                            <img src="certificates/DIPR2_cert.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/DIPR3_cert.png')">
+                            <img src="certificates/DIPR3_cert.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/LS_cert.png')">
+                            <img src="certificates/LS_cert.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/smm.png')">
+                            <img src="certificates/smm.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/EHer_cert.png')">
+                            <img src="certificates/EHer_cert.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/CCR_Badge20240326-29-ve0gng.png')">
+                            <img src="certificates/CCR_Badge20240326-29-ve0gng.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/BPT_cert.png')">
+                            <img src="certificates/BPT_cert.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/ETechprenuership_cert.png')">
+                            <img src="certificates/ETechprenuership_cert.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/CHB_Badge20240326-29-vn2ges.png')">
+                            <img src="certificates/CHB_Badge20240326-29-vn2ges.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/NSAS_Badge20241013-7-1oy2b9.png')">
+                            <img src="certificates/NSAS_Badge20241013-7-1oy2b9.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/NDAIC_Badge20241027-7-4l4fa9.png')">
+                            <img src="certificates/NDAIC_Badge20241027-7-4l4fa9.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+                    <div class="col-md-3 mb-4 certificate-item hidden">
+                        <div class="certificate-card" onclick="openModal('certificates/ND_Badge20241013-7-javszu.png')">
+                            <img src="certificates/ND_Badge20241013-7-javszu.png" alt="Certificate 1" class="certificate-img">
+                            <div class="overlay">
+                                <p>View Certificate</p>
+                            </div>
+                        </div>   
+                    </div> 
+
+                    <!-- Modal Structure -->
+                    <div id="certificateModal" class="certificatesmodal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="certificatesmodal-content" id="modalImage" alt="Certificate">
+                    </div>
+
+                    <!-- See More Button -->
+                    <button id="seeMoreBtnCertificates" class="see-more-btn" onclick="toggleCertificates()">
+                        <span id="seeMoreTextCertificates">See More</span>
+                    </button>                    
+                </div>
+            </div>
+        </div>
+            <!--Tech-stack-->
+            <div id="tech-stack" class="tab-content" style="display: none;">
+                <div class="row" id="techStackContainer">
+                    <!-- First Row -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/c++_logo.png" class="tech-logo mx-auto mt-3" >
+                            <div class="card-body">
+                                <h5 class="card-title">C++</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/csharp_logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">C#</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/html_logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/css_logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">CSS</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/javascript_logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/php_logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">PHP</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Second Row -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/wordpress.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Wordpress</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/wix.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Wix</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/unity_logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Unity</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/canva_logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Canva</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/photoshop_logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Photoshop</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/Mysql_logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">SQL</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/figma.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Figma</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/Bootstrap_logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Bootstrap</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/Tableau_Logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Tableau</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/New_Power_BI_Logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">PowerBI</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/New_Power_BI_Logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">PowerBI</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 text-center">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/New_Power_BI_Logo.png" class="tech-logo mx-auto mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">PowerBI</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="container-xxl">
+                <div class="row align-items-start">
+                    <!-- Widest Column -->
+                    <div class="col-lg-6">
+                        <h1 class="cf">Got a project? Let’s talk!</h1>
+                    </div>
+                        
+                    <!-- Equal-width Columns -->
+                    <div class="col-lg-5">
+                        <h5 class="cf">START A CONVERSATION</h5>
+
+                        <h3 class="cf">
+                            <a class="email" href="mailto:ginabasquina23@gmail.com">ginabasquina23@gmail.com</a>
+                        </h3>
+            
+                        <h5 class="cf">LET’S GET SOCIAL</h5>
+
+                        <div class="social-links">
+                            <a class="cf" target="_blank" href="https://www.facebook.com/onel.basquina">
+                                <img src="images/fb.png" alt="Facebook">
+                            </a>
+                            <a class="cf" target="_blank" href="https://github.com/ginabasquina">
+                                <img src="images/github.png" alt="Github">
+                            </a>
+                            <a class="cf" target="_blank" href="https://www.linkedin.com/in/gina-basquina-873475279">
+                                <img src="images/in.png" alt="LinkedIn">
+                            </a>
+                        </div>
+                    </div>          
+                </div>
+            </div>       
+        </section>
+                               
+        <footer>						
+            <div class="site-info">			
+                <p class="p-footer">© 2025 Gina Basquiña. All rights reserved.</p>
+            </div> <!-- .site-info -->
+        </footer>    
+    </main>
+
+    <script src="navigation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
