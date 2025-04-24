@@ -127,45 +127,46 @@ function closeModal() {
 }
 
 
-
-
 function toggleCertificates() {
     const allCertificates = document.querySelectorAll('.certificate-item');
     const seeMoreText = document.getElementById('seeMoreTextCertificates');
-    
-        let isExpanded = false;
-    
-        allCertificates.forEach((item, index) => {
-            if (index >= 8) {
-                item.classList.toggle('hidden');
-                if (!item.classList.contains('hidden')) {
-                    isExpanded = true; // Track if any hidden items are now visible
-                }
+
+    // Check current state: are we showing or hiding?
+    const isCurrentlyHidden = allCertificates[8]?.classList.contains('hidden');
+
+    allCertificates.forEach((item, index) => {
+        if (index >= 8) {
+            if (isCurrentlyHidden) {
+                item.classList.remove('hidden');
+            } else {
+                item.classList.add('hidden');
             }
-        });
-    
-        // Correctly update text and icon
-        seeMoreText.textContent = isExpanded ? "See Less" : "See More";
-    }
-    
-    
-    function toggleProjects() {
-        const allProjects = document.querySelectorAll('.project-item');
-        const seeMoreText = document.getElementById('seeMoreTextProjects');
-    
-        allProjects.forEach((item, index) => {
-            if (index >= 6) {
-                item.classList.toggle('hidden');
-                if (!item.classList.contains('hidden')) {
-                    isExpanded = true; // Track if any hidden items are now visible
-                }
+        }
+    });
+
+    // Update text based on action
+    seeMoreText.textContent = isCurrentlyHidden ? "See Less" : "See More";
+}
+
+
+function toggleProjects() {
+    const allProjects = document.querySelectorAll('.project-item');
+    const seeMoreText = document.getElementById('seeMoreTextProjects');
+
+    let isExpanded = false; // <-- This was missing
+
+    allProjects.forEach((item, index) => {
+        if (index >= 6) {
+            item.classList.toggle('hidden');
+            if (!item.classList.contains('hidden')) {
+                isExpanded = true;
             }
-        });
-    
-        // Correctly update text and icon
-        seeMoreText.textContent = isExpanded ? "See Less" : "See More";
-    }
-    
+        }
+    });
+
+    seeMoreText.textContent = isExpanded ? "See Less" : "See More";
+}
+
 
 // Load JSON Data
 let projects = [];
