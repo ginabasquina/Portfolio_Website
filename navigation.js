@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const firstWordElement = document.getElementById("first-word");
     const secondWordElement = document.getElementById("second-word");
 
-    const firstWords = ["Gina", "Web", "Web", "Data"];
+    const firstWords = ["Gina", "Web", "UX/UI", "Data"];
     const secondWords = ["Basquiña", "Developer", "Designer", "Analyst"];
 
     let textIndex = 0;
