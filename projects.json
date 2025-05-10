@@ -26,8 +26,13 @@
     },
     {
       "title": "Password Verifier",
-      "description": "Password verifier is a mini web-based system that assesses the strength of passwords entered by users to determine if they meet security standards. The system provides immediate feedback to users, indicating whether their password is considered strong or not.", 
+      "description": "Password verifier is a mini web-based application that assesses the strength of passwords entered by users to determine if they meet security standards. The system provides immediate feedback to users, indicating whether their password is considered strong or not.", 
       "image": "images/pv1.png"
+    },
+    {
+      "title": "Porfolio Mobile Design",
+      "description": "Password verifier is a mini web-based application that assesses the strength of passwords entered by users to determine if they meet security standards. The system provides immediate feedback to users, indicating whether their password is considered strong or not.", 
+      "image": "images/Portfolio.png"
     }
   ]
   
