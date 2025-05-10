@@ -12,12 +12,14 @@
     {
       "title": "Monkey Hop Game",
       "description": "Monkey Hop is a simple fun game created using Unity, where players control a jumping monkey navigating through obstacles and collecting bananas until it reaches the final goal.", 
-      "image": "images/gameDev1a.png"
+      "image": "images/gameDev1a.png",
+      "liveDemo":"https://drive.google.com/file/d/10xzL84oGqzWpE015ibyJlm3__3xz7-Uq/view?usp=sharing"
     },
     {
       "title": "Space Shooter Game",
       "description": "Space Shooter is simple game where players will battle against alien spaceships. Players must defeat waves of enemy ships to survive. Every minute brings a challenge as boss ship emerges, testing the player's skills and tactics to the limit.", 
-      "image": "images/gameDev2a.png"
+      "image": "images/gameDev2a.png",
+      "liveDemo":"https://drive.google.com/file/d/1BX4DjJ9StcNRm2NQpK1wCa5xDCL_uRv5/view?usp=sharing"
     },
     {
       "title": "Password Verifier",

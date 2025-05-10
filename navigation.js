@@ -189,11 +189,22 @@ function initializeButtons() {
             const modalTitle = document.getElementById('projectModalLabel');
             const modalDescription = document.getElementById('projectDescription');
             const modalImage = document.getElementById('projectImage');
+            const liveDemoButton = document.querySelector(".live-btn");
 
             // Populate Modal Content
             modalTitle.textContent = project.title;
             modalDescription.textContent = project.description;
             modalImage.src = project.image;
+
+            // Set the href of the Live Demo button
+            if (project.liveDemo) {
+                liveDemoButton.href = project.liveDemo;
+                liveDemoButton.style.display = "inline-block";
+            } else {
+                liveDemoButton.href = "#";
+                liveDemoButton.style.display = "none"; // hide if no link
+            }
+
 
             // Show Modal
             const projectModal = new bootstrap.Modal(document.getElementById('projectModal'));
