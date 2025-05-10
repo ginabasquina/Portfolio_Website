@@ -20,11 +20,6 @@
       "image": "images/gameDev2a.png"
     },
     {
-      "title": "Task Tracker Web-App",
-      "description": "Task Tracker is a simple web-based application designed for task organization and tracking. Users can create an account, providing them with access to a personalized workspace. Within this workspace, users can add new tasks, specifying details such as task name, description, due date, and priority level.", 
-      "image": "images/to-dolist1.png"
-    },
-    {
       "title": "Password Verifier",
       "description": "Password verifier is a mini web-based application that assesses the strength of passwords entered by users to determine if they meet security standards. The system provides immediate feedback to users, indicating whether their password is considered strong or not.", 
       "image": "images/pv1.png"
